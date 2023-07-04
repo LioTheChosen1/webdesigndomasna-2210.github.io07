@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(46, 117, 66);
+    color: #f6f6f6;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("dsa.jpg");
+    opacity: 0.20;
+    z-index: -1;
+}
+
+#header {
+    width: 100%;
+    height: 3000px;
+}
+
+.kontinjer {
+    padding-top: 90px;
+}
+
+nav {
+    font-family: 'Fjalla One', sans-serif;
+    float: right;
+    font-size: 60px;
+}
+
+nav ul {
+    padding-top: 89px;
+    font-size: 70px;
+    list-style: none;
+    padding-right: 400px;
+    font-style: italic;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 250px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #d56d00;
+}
+.hoverAnimation {
+    display: inline-block;
+    position: relative;
+    color: #d56d00;
+}
+
+.hoverAnimation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 12px;
+    border-radius: 100px;
+    bottom: 0;
+    left: 0;
+    background-color: #d56d00;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.hoverAnimation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.kontinjer {
+    height: 450px;
+    background: rgb(222, 125, 22);
+    background: linear-gradient(180deg, rgba(222, 125, 22, 0.773546918767507) 14%, rgba(199, 208, 53, 0) 100%);
+}
+
+.kontinjer img {
+    padding-bottom: 100px;
+}
+#main{
+    padding-top: 300px;
+    padding-left: 200px;
+}
+#text{
+    background: rgb(222,125,22);
+    background: radial-gradient(circle, rgba(222,125,22,0.25) 30%, rgba(31,124,242,0.25253851540616246) 100%);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding: 70px;
+}
+#main h1 {
+    font-family: Arial, sans-serif; /* Choose your preferred font-family */
+    font-size: 136px; /* Adjust the font size as desired */
+    font-weight: bold;
+    font-style: italic;/* Set the font weight to bold */
+    color: #6ebdf7; /* Set the color of the heading */ /* Align the heading text to the center if needed */
+    text-transform: uppercase; /* Convert the text to uppercase if desired */
+    letter-spacing: 3px; /* Adjust the spacing between letters */
+    line-height: 1; /* Set the line height for the heading */
+    margin: 30px 0; /* Add margin around the heading */
+    padding-left: 1000px;
+    padding-bottom: 50px;
+}
+#main p{
+    font-size: 80px;
+    padding-bottom: 100px;
+    color: #cca37a;
+    font-style: italic;
+}
+#main div:nth-child(1)
+{
+    width: 50%;
+}
+#slikaDiv{
+    width: 1700px;
+    float: right;
+    margin-top:-2700px;
+    margin-right: 1200px;
+}
+#slikaDiv img {
+    border-radius: 200px;
+    border: rgba(48, 250, 3, 0.1) 10px solid;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.5s ease;
+}
+
+#slikaDiv img:hover {
+    box-shadow: 0 10px 20px rgba(158, 255, 150, 0.76);
+}
+.skills-section {
+    width: 50%;
+    padding-left: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.skills-section h2{
+    font-size: 130px;
+    font-style: italic;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+    font-weight: lighter;
+    color: #ffc483;
+}
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin-bottom: 50px;
+}
+
+.language {
+    font-weight: bold;
+}
+
+.skill-bar {
+    background-color: rgba(255, 215, 191, 0.5);
+    height: 90px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+    width: 2500px;
+}
+.language{
+    font-size: 70px;
+    margin-bottom: 50px;
+    color: #d5ffd6;
+}
+.skill-level {
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #fd9e37;
+    color: rgba(53, 103, 61, 0.75);
+    text-align: center;
+    line-height: 90px;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.cplusplus {
+    width: 85%;
+}
+
+.c {
+    width: 80%;
+}
+
+.htmlicss {
+    width: 70%;
+}
+.photoshop{
+    width: 65%;
+}
+.illustrator{
+    width: 40%;
+}
+.video{
+    width: 40%;
+}
+.skilllevelpodesi{
+    padding-top: 20px;
+}
+
+#idnina{
+    width: 3000px;
+    margin-right: 400px;
+    float: right;
+    margin-top: -1552px;
+    border: rgba(84, 243, 125, 0.37) 10px solid;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding: 100px;
+    filter: blur(0);
+    transition: filter 0.3s ease;
+}
+#idnina h1 {
+    font-family: Arial, sans-serif;
+    font-size: 136px;
+    font-weight: bold;
+    font-style: italic;
+    color: #6ebdf7;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1;
+    margin: 30px 0;
+    padding-left: 800px;
+    padding-bottom: 50px;
+}
+#idnina p{
+    font-size: 80px;
+    padding-bottom: 100px;
+    color: #cca37a;
+    font-style: italic;
+    line-height: 130px;
+}
+#copyright {
+    position: page;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+#copyright p{
+    color: rgba(255, 255, 255, 0.5);
+}
+#finki{
+    text-decoration: none;
+    color: #3093d1;
+}

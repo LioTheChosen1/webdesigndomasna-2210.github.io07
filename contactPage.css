@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(54, 152, 157);
+    color: #f6f6f6;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("oblacinja.jpg");
+    opacity: 0.3;
+    z-index: -1;
+}
+
+#header {
+    width: 100%;
+    height: 3000px;
+}
+
+.kontinjer {
+    padding-top: 90px;
+}
+
+nav {
+    font-family: 'Fjalla One', sans-serif;
+    float: right;
+    font-size: 60px;
+}
+
+nav ul {
+    padding-top: 89px;
+    font-size: 70px;
+    list-style: none;
+    padding-right: 400px;
+    font-style: italic;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 250px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #d56d00;
+}
+
+.hoverAnimation {
+    display: inline-block;
+    position: relative;
+    color: #d56d00;
+}
+
+.hoverAnimation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 12px;
+    bottom: 0;
+    left: 0;
+    background-color: #d56d00;
+    transform-origin: bottom right;
+    transition: transform 0.30s ease-out;
+}
+
+.hoverAnimation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.kontinjer {
+    height: 450px;
+    background: rgb(222, 125, 22);
+    background: linear-gradient(180deg, rgba(222, 125, 22, 0.773546918767507) 14%, rgba(199, 208, 53, 0) 100%);
+}
+.kontinjer img {
+    padding-bottom: 100px;
+}
+#main{
+    padding-top: 150px;
+}
+#blagodarnost h1{
+    display: flex;
+    justify-content: center;
+    color: #fff4eb;
+    font-size: 150px;
+    font-weight: normal;
+    padding-bottom: 100px;
+}
+#blagodarnost p{
+    display: flex;
+    justify-content: center;
+    color: #ffe0e0;
+    font-size: 80px;
+    font-weight: normal;
+    padding-bottom: 100px;
+    width: 2450px;
+    text-align: center;
+    margin: auto;
+}
+#contact_part img{
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    margin-left: 2610px;
+    padding-bottom: 100px;
+}
+
+#contact_part input{
+    font-size: 80px;
+    padding-left: 10px;
+}
+input:focus,
+ textarea:focus {
+     outline: none;
+ }
+
+#contact_part textarea{
+    font-size: 80px;
+    padding-left: 10px;
+}
+#contact_part p{
+    color: #305056;
+    font-size: 70px;
+    letter-spacing: 3px;
+    padding-bottom: 5px;
+}
+#contact_part .ip input{
+    width: 1000px;
+    height: 110px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: rgba(255, 152, 112, 0.34);
+    background: rgba(176, 250, 255, 0.74);
+}
+#contact_part .mail input{
+    width: 2105px;
+    height: 110px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: rgba(255, 152, 112, 0.34);
+    background: rgba(176, 250, 255, 0.74);
+}
+#contact_part textarea::placeholder{
+
+    color: rgba(44, 85, 89, 0.55);
+    font-size: 60px;
+    padding: 10px;
+    font-style: oblique;
+}
+.ip{
+    display: flex;
+    justify-content: left;
+    width: 23%;
+    padding-bottom: 70px;
+}
+.ime{
+    padding-right: 100px;
+}
+.mail{
+    padding-bottom: 70px;
+}
+.image {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add box shadow to the image */
+}
+
+.txt textarea{
+    width: 2105px;
+    height: 500px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: rgba(255, 152, 112, 0.34);
+    background: rgba(176, 250, 255, 0.74);
+}
+
+.social-icons {
+    padding-top: 130px;
+    margin-left: 3160px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 10px;
+}
+
+.social-icons img {
+    width: 100px;
+    height: 100px;
+    margin-left: 150px;
+}
+
+.social-icons a:hover img {
+    opacity: 0.5;
+}
+
+form {
+    padding: 100px;
+    margin-left: 2640px;
+    width: 2300px;
+    border-radius: 30px;
+    background: rgba(33, 182, 192, 0.45);
+    box-shadow: 0 0 20px rgba(176, 250, 255, 0.8); /* Add box shadow with lighter blue color */
+    transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+    border: none; /* Remove the border */
+}
+
+form:hover {
+    box-shadow: 0 0 30px rgba(176, 250, 255, 0.9); /* Increase the intensity of the box shadow on hover */
+}
+
+#contact_part input {
+    font-size: 80px;
+    padding-left: 10px;
+    background: rgba(176, 250, 255, 0.74);
+    border: 5px solid rgba(255, 152, 112, 0.34);
+    border-radius: 10px;
+}
+
+#contact_part textarea {
+    font-size: 80px;
+    padding-left: 10px;
+    background: rgba(176, 250, 255, 0.74);
+    border: 5px solid rgba(255, 152, 112, 0.34);
+    border-radius: 10px;
+}
+
+#contact_part textarea::placeholder {
+    color: rgba(44, 85, 89, 0.55);
+    font-size: 60px;
+    padding: 10px;
+    font-style: normal;
+}
+textarea,input{
+    font-family: 'Fjalla One', sans-serif;
+    color: #1c4042;
+}
+.pritisni {
+    margin-top: 50px;
+    display: inline-block;
+    background-color: #37d5da;
+    color: #305056;
+    border: none;
+    cursor: pointer;
+    height: 100px;
+    width: 700px;
+    font-size: 55px;
+    border-radius: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease; /* Add transition for smooth effect */
+}
+
+.pritisni:hover {
+    background-color: #00faff;
+}
+
+#copyright {
+    position: page;
+
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    clear: left;
+}
+#copyright p{
+    color: rgba(255, 255, 255, 0.5);
+}

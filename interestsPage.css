@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(87, 45, 157);
+    color: #f6f6f6;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("slika3.jpg");
+    opacity: 0.1;
+    z-index: -1;
+}
+
+#header {
+    width: 100%;
+    height: 3000px;
+}
+
+.kontinjer {
+    padding-top: 90px;
+}
+
+nav {
+    font-family: 'Fjalla One', sans-serif;
+    float: right;
+    font-size: 60px;
+}
+
+nav ul {
+    padding-top: 89px;
+    font-size: 70px;
+    list-style: none;
+    padding-right: 400px;
+    font-style: italic;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 250px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #d56d00;
+}
+.hoverAnimation {
+    display: inline-block;
+    position: relative;
+    color: #d56d00;
+}
+
+.hoverAnimation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 12px;
+    border-radius: 100px;
+    bottom: 0;
+    left: 0;
+    background-color: #d56d00;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.hoverAnimation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.kontinjer {
+    height: 450px;
+    background: rgb(222, 125, 22);
+    background: linear-gradient(180deg, rgba(222, 125, 22, 0.773546918767507) 14%, rgba(199, 208, 53, 0) 100%);
+}
+.kontinjer img {
+    padding-bottom: 100px;
+}
+#main{
+    margin-top: 200px;
+}
+#ri h1,#hobi h1
+{
+    display: flex;
+    justify-content: center;
+    color: #caafff;
+    font-size: 180px;
+    text-transform: uppercase;
+    font-style: italic;
+    padding-bottom: 100px;
+}
+#ri p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 22px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+#ri .skills-section {
+    width: 50%;
+    padding-left: 2500px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+#ri .skills-section h2{
+    font-size: 120px;
+    font-style: italic;
+    letter-spacing: 3px;
+    padding-bottom: 50px;
+    font-weight: lighter;
+    color: #ffc483;
+    width: 2500px;
+}
+#ri .skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#ri .skills-list li {
+    margin-bottom: 50px;
+}
+
+#ri .language {
+    font-weight: bold;
+    width: 2500px;
+}
+#ri span{
+    display: block;
+}
+#ri .skill-bar {
+    background-color: rgba(255, 215, 191, 0.5);
+    height: 90px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+    width: 2500px;
+}
+#ri .language{
+    font-size: 70px;
+    color: #cf98ff;
+    padding-bottom: 10px;
+    text-align: center;
+}
+#ri .skill-level {
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #fd9e37;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    color: rgba(85, 40, 148, 0.75);
+    text-align: center;
+    line-height: 90px;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#ri .negotiation {
+    width: 90%;
+}
+
+#ri .communication {
+    width: 100%;
+}
+
+#ri .discipline {
+    width: 100%;
+}
+#ri .planning{
+    width: 100%;
+}
+#ri .teamwork{
+    width: 95%;
+}
+#ri .skilllevelpodesi{
+    padding-top: 20px;
+}
+
+#hobi{
+    padding-top: 200px;
+    padding-left: 200px;
+    padding-right: 100px;
+    margin-bottom: 200px;
+}
+.interesi {
+    float:left;
+    width: 33%;
+    padding-right: 100px;
+}
+#hobi h3{
+    padding-left: 800px;
+    font-size: 150px;
+    font-style: italic;
+    letter-spacing: 3px;
+    padding-bottom: 50px;
+    font-weight: lighter;
+    color: #ffc483;
+    width: 2500px;
+}
+#hobi div{
+    padding-bottom: 200px;
+}
+#hobi #novred{
+    margin-left: 1200px;
+}
+#hobi #novred div{
+    margin-left: 200px;
+}
+#hobi p{
+    text-align: center;
+    font-size: 70px;
+    padding-top: 22px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+#fudbal > img{
+    margin-left: 380px;
+    margin-top: 50px;
+    border: rgba(213, 53, 68, 0.31) 15px solid;
+}
+#citanje > img{
+    margin-top: 50px;
+    margin-left: 80px;
+    border: rgba(213, 53, 68, 0.31) 15px solid;
+}
+#citanje h3{
+    padding-left: 650px;
+}
+#filmovi h3{
+    padding-left: 420px;
+}
+#filmovi  > img{
+    margin-top: 50px;
+    margin-left: 80px;
+    border: rgba(213, 53, 68, 0.31) 15px solid;
+}
+#tocak h3{
+    padding-left: 500px;
+}
+#tocak  > img{
+    margin-top: 50px;
+    border: rgba(213, 53, 68, 0.31) 15px solid;
+}
+#teretana h3{
+    padding-left: 220px;
+}
+#teretana  > img{
+    margin-top: 50px;
+    border: rgba(213, 53, 68, 0.31) 15px solid;
+}
+
+#hobi img{
+    box-shadow: 0px 0px 50px rgba(27,29,27,0.27);
+}
+#copyright {
+    position: page;
+    padding-top: 20px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    clear: left;
+}
+#copyright p{
+    color: rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(21, 124, 197);
+    color: #f6f6f6;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("1218911.jpg");
+    opacity: 0.3;
+    z-index: -1;
+}
+
+#header {
+    width: 100%;
+    height: 3000px;
+}
+
+.kontinjer {
+    padding-top: 90px;
+}
+
+nav {
+    font-family: 'Fjalla One', sans-serif;
+    float: right;
+    font-size: 60px;
+}
+
+nav ul {
+    padding-top: 89px;
+    font-size: 70px;
+    list-style: none;
+    padding-right: 400px;
+    font-style: italic;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 250px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d56d00;
+}
+
+.hoverAnimation {
+    display: inline-block;
+    position: relative;
+    color: #d56d00;
+}
+
+.hoverAnimation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 12px;
+    border-radius: 100px;
+    bottom: 0;
+    left: 0;
+    background-color: #d56d00;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.hoverAnimation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.kontinjer {
+    height: 450px;
+    background: rgb(222, 125, 22);
+    background: linear-gradient(180deg, rgba(222, 125, 22, 0.773546918767507) 14%, rgba(199, 208, 53, 0) 100%);
+}
+
+.kontinjer img {
+    padding-bottom: 100px;
+}
+
+#main {
+    padding-top: 700px;
+    padding-left: 200px;
+    height: 1500px;
+    letter-spacing: 10px;
+    font-size: 200px;
+    color: #6fbef9;
+    transition: padding-top 0.3s ease, color 0.3s ease;
+}
+
+#main h2 {
+    padding-top: 20px;
+    font-size: 123px;
+    font-weight: bold;
+    color: #ff8c39;
+}
+
+#slika {
+    float: right;
+    margin-top: -2284px;
+    margin-right: -20px;
+    transition: margin-top 0.3s ease, margin-right 0.3s ease;
+}
+
+#pogovrka {
+    margin-top: -856px;
+    padding-left: 200px;
+    height: 423px;
+    font-style: italic;
+    font-size: 90px;
+    color: #ffbe80;
+    transition: margin-top 0.3s ease, color 0.3s ease;
+}
+
+#download-btn {
+    margin-left: 200px;
+    padding: 40px 70px;
+    background-color: #ff9f37;
+    color: white;
+    border: none;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Added box-shadow property */
+}
+
+#download-btn a {
+    text-decoration: none;
+    color: #1a6296;
+}
+
+#download-btn:hover {
+    background-color: rgba(253, 158, 55, 0.5);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Added box-shadow property */
+}
+
+
+#copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px;
+}
+#copyright p{
+    color: rgba(255, 255, 255, 0.5);
+}
